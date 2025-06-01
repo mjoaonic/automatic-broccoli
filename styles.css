@@ -1,0 +1,370 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  overflow-x: hidden; /* PROVISÓRIO */
+}
+.barra{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #556fdb;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.nave{
+	margin-left: auto;
+	padding-right: 50px;
+
+}
+.nave a{
+text-decoration: none;
+  color: blanchedalmond;
+}
+
+.nave a.active {
+	border-bottom: 2px solid blanchedalmond;
+	opacity: 80%;
+	font-size: 18px;
+	pointer-events: none;
+}
+
+.nave li{
+	list-style-type: none;
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	margin-left: 50px;
+	transition: font-size 0.3s ease;
+ 
+}
+
+.nave li:hover{
+	font-size: 20px;
+}
+
+.topo{
+	display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topo .logo{
+	width: 80px;
+	height: auto;
+}
+
+.topo .logtex {
+	padding-top: 20px;
+	width: 200px;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	.barra {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+	}
+	
+	.nave {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+	}
+
+	.topo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+	}
+
+	.topo .logtex {
+    width: 150px;
+	}
+
+}
+
+/* ------------------------------------------------------
+o que está acima desta linha é a estilização do cabecalho. 
+o que está abaixo já é referente à estilização dos 
+menus (inicial, jogos e sobrenos) 
+---------------------------------------------------------
+*/
+
+a{
+	text-decoration: none;
+}
+
+/* faz parte do menu inicial------------------------------*/
+.banner{
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+	border: 2px solid black;
+
+}
+
+.welcome{
+	text-align: center;
+	color: white;
+	font-size: 55px;
+	background-color: #293462;
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+}
+
+.welcome h1{
+	font-size: 60px;
+	font-style: bold;
+}
+
+.intro {
+	text-align: center;
+	color: #293462;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+}
+
+.intro p{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+
+.melhoras{
+	text-align: center;
+	color: #D61C4E;
+	font-size: 80px;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+
+/* faz parte do menujogos.php -----------------------------*/ 
+
+.titulojogos{
+	font-size: 60px;
+	font-weight: bold;
+	color: #293462;
+	margin-top: 50px;
+}
+
+
+.jogar{
+	height: 75px;
+	width: 300px;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 200px;
+	background-color: #293462;
+	color: white;
+	margin-bottom: 50px;
+	border: 0px;
+}
+
+.jogar:hover{
+	opacity: 80%;
+}
+
+
+.ppt{
+	text-align: center;
+	width: 100%;
+	border-top: 5px solid #293462;
+	border-bottom: 5px solid #293462;
+	height: 400px;
+	color: #293462;
+	background-image: url('assets/pepatefundojpg.jpg');
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.ppt h1{
+	font-size: ;
+	margin-top: 30px;
+}
+
+.obst h1{
+	font-size: ;
+	margin-top: 30px;
+}
+
+.adnr h1{
+	font-size: ;
+	margin-top: 30px;
+}
+
+.mem h1{
+	font-size: ;
+	margin-top: 30px;
+}
+
+.obst{
+	text-align: center;
+	width: 100%;
+	border-top: 5px solid #293462;
+	border-bottom: 5px solid #293462;
+	height: 400px;
+	color: #293462;
+	background-image: url('assets/evitfundo.jpg');
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+
+
+.adnr{
+	text-align: center;
+	width: 100%;
+	border-top: 5px solid #293462;
+	border-bottom: 5px solid #293462;
+	height: 400px;
+	color: #293462;	
+	background-image: url('assets/numberfundo.jpg');
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.mem{
+	text-align: center;
+	width: 100%;
+	border-top: 5px solid #293462;
+	border-bottom: 5px solid #293462;
+	height: 400px;
+	color: #293462;
+	background-image: url('assets/');
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+
+
+
+/* faz parte do sobrenos ------------------------------------*/
+
+
+
+.sobrenos{
+	text-align: center;
+	font-size: 30px;
+	color: #293462;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.sobrenos h1{
+	font-style: bold;
+	font-size: 60px;
+	color: #293462;
+}
+
+.sobrenos p{
+	margin-top: 50px;
+}
+
+
+
+
+.autores{
+	background-color: #293462;
+	color: white;
+	height: 400px;
+	width: 100%;
+	display: flex;
+}
+
+.mjn{
+	width: 50%;
+}
+
+.jtb{
+	width: 50%;
+}
+
+
+
+iframe{
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.local{
+	font-style: bold;
+	font-size: 60px;
+	margin-top: 50px;
+	color: #293462;
+}
+
+
+/* footer -------------------------------------------------------*/
+
+.footer{
+	background-color: #556fdb;
+	width: 100%;
+	align-items: center;
+	height: 100px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer p{
+	color: blanchedalmond;
+	font-size: 30px;
+}
+
+
+.footer a{
+	color: blanchedalmond;
+}
+
+
+.insta:hover{
+	color: #293462;
+}
+
+.footer img{
+	width: 70px;
+	height: 70px;
+	margin-left: 20px;
+
+}
+
+
